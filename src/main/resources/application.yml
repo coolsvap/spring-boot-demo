@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: "Demo Application"
+server:
+  port: 8080
+
+
+---
+spring:
+  profiles: dev
+  application:
+    name: "Dev Profile"
+server:
+  port: 8090
+---
+
+spring:
+  profiles: Test
+  application:
+    name: "Test Profile"
+server:
+  port: 9080
